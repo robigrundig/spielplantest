@@ -3,23 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Spielplan</title>
+  <title>Spielplan PDF</title>
   <style>
-    body { margin:0; font-family:sans-serif; background:#f9f9f9; }
-    header { padding:1em; text-align:center; background:#004b9b; color:white; }
-    .viewer { height: calc(100vh - 70px); }
-    iframe { width:100%; height:100%; border:none; }
-    a.button { background:white; color:#004b9b; padding:10px 18px; border-radius:10px; text-decoration:none; }
+    html,body {
+      margin:0;
+      height:100%;
+      background:#f8f8f8;
+    }
+    iframe {
+      border:0;
+      width:100%;
+      height:100%;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h2>Spielplan</h2>
-    <a class="button" href="https://svwasser-my.sharepoint.com/:b:/g/personal/kisscup_sgwk_de/EZUT8pxFFntAgwKi17TrOHUBcyZudvI9b4DpMK7ySY59sA?e=IzqcUJ" target="_blank">PDF herunterladen</a>
-  </header>
-
-  <div class="viewer">
-    <iframe src="https://svwasser-my.sharepoint.com/:b:/g/personal/kisscup_sgwk_de/EZUT8pxFFntAgwKi17TrOHUBcyZudvI9b4DpMK7ySY59sA?e=IzqcUJ"></iframe>
-  </div>
+  <!-- PDF direkt eingebettet -->
+  <iframe 
+    src="https://svwasser-my.sharepoint.com/:b:/g/personal/kisscup_sgwk_de/EZUT8pxFFntAgwKi17TrOHUBcyZudvI9b4DpMK7ySY59sA?e=IzqcUJ"
+    allowfullscreen
+  ></iframe>
 </body>
 </html>
+
